@@ -36,7 +36,7 @@ pipeline {
             }
             steps {
 		echo "1"
-                //build 'monorepo-library'
+                build 'monorepo-library'
             }
         }
         stage('play-a') {
@@ -48,7 +48,7 @@ pipeline {
             }
             steps {
 		echo "2"
-                //build 'play-a'
+                build 'play-a'
             }
         }
         stage('play-b') {
@@ -60,7 +60,7 @@ pipeline {
             }
             steps {
 		echo "3"
-                //build 'play-b'
+                build 'play-b'
             }
         }
     }
